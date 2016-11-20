@@ -1182,7 +1182,7 @@ namespace MatioCPP
          {
             cplx.Re = real->data();
             cplx.Im = imag->data();
-            var = Mat_VarCreate(name.c_str(), MC, MT, N, const_cast<SizeType *>(dims.data()), &cplx, MAT_F_COMPLEX | MAT_F_DONT_COPY_DATA);
+            var = Mat_VarCreate(name.c_str(), MC, MT, N, const_cast<SizeType *>(dims.data()), &cplx, MAT_F_DONT_COPY_DATA);
             assert(var != nullptr);
          }
 
